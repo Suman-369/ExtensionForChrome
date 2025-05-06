@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extension Option</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4a90e2;
+      outline: none;
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3b7dd8;
+    }
+
+    #success-message {
+      display: none;
+      margin-top: 1rem;
+      color: #28a745;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Summary Setting</h1>
+    <div class="form-group">
+      <label for="api-key">Gemini API Key</label>
+      <input type="text" id="api-key" placeholder="Enter your Gemini API key" required />
+      <p>
+        You can get your Gemini API key from
+        <a href="https://aistudio.google.com/apikey" target="_blank">Google Gemini</a>.
+      </p>
+    </div>
+
+    <button id="save-button">Save Setting</button>
+    <p id="success-message" class="success-message">
+      Setting Saved Successfully.
+    </p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
