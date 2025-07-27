@@ -1,5 +1,7 @@
 # Super 369 - Chrome Extension
 
+Download and use it
+
 Super 369 is a Chrome extension that allows you to instantly summarize the content of any web page using Google's Gemini API. With just a click, you can get a brief, detailed, or bullet-point summary of the article or page you're viewing, and easily copy the generated summary for further use.
 
 ---
